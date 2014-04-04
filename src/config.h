@@ -3,15 +3,15 @@
 #include <libconfig.h>
 
 typedef struct {
-    char *name;
-    int frequency_update_hours;
-    char *update_cmd;
+  char *name;
+  int frequency_update_hours;
+  char *update_cmd;
 } upd8_source_t;
 
 typedef struct {
-    int num_sources;
-    upd8_source_t *sources;
-    config_t *cfg;
+  int num_sources;
+  upd8_source_t *sources;
+  config_t *cfg;
 } upd8_config_t;
 
 void upd8_config_init(upd8_config_t *);
